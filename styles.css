@@ -411,3 +411,57 @@ footer {
   margin: 0 auto;
   padding: 0 1rem;
 }
+
+/* Logo image */
+.logo-image {
+  height: 2.5rem;
+  width: auto;
+}
+
+/* Testimonials section */
+.testimonials {
+  padding: 3rem 1rem;
+  text-align: center;
+  background: var(--text-light);
+}
+
+.testimonials .stars {
+  margin-bottom: 0.5rem;
+}
+
+.testimonials .stars i {
+  color: var(--primary-pink);
+  font-size: 1.5rem;
+  margin: 0 0.1rem;
+}
+
+.testimonials .review-quote {
+  font-family: var(--font-head);
+  font-size: 1.6rem;
+  font-style: italic;
+  color: var(--text-dark);
+  margin: 1.5rem auto 0.5rem;
+  max-width: 800px;
+}
+
+.testimonials .review-author {
+  font-size: 0.9rem;
+  color: #777777;
+  margin-bottom: 1rem;
+}
+
+/* Footer social icons */
+.footer-social {
+  margin-top: 1rem;
+}
+
+.footer-social a {
+  color: var(--text-light);
+  font-size: 1.4rem;
+  margin-right: 0.8rem;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: var(--primary-pink);
+}
