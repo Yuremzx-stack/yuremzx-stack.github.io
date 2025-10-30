@@ -3,35 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Jupiter's Ice Cream</title>
-  <!-- Updated to reference root-level CSS and JS -->
+  <title>About Us – Jupiter's Ice Cream</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p/wZPcn9l9Bv5F1P0uL1GcHjqCOUMIqFZ3VAb9Y/jGj33jjXNMTvEihQ/HVbUaz2QmiFjCwXTlzAIXazhbug/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
+  <!-- Script -->
   <script src="main.js" defer></script>
 </head>
 <body>
   <header>
+    <div class="top-bar">
+      <div class="site-info">
+        <span class="logo-emoji">🍦</span>
+        <div>
+          <h1>Jupiter's Ice Cream</h1>
+          <p>Manor, Texas</p>
+        </div>
+      </div>
+      <div class="top-buttons">
+        <a href="menu.html" class="btn btn-small btn-primary">See Menu</a>
+        <a href="tel:+15122942525" class="btn btn-small btn-outline"><i class="fa-solid fa-phone"></i>Call Now</a>
+      </div>
+    </div>
     <nav class="navbar">
-      <div class="logo"><a href="index.html">🍦 Jupiter's Ice Cream</a></div>
-      <ul class="nav-links">
+      <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="menu.html">Menu</a></li>
-        <li><a href="about.html">About</a></li>
+        <li class="active"><a href="about.html">About</a></li>
         <li><a href="visit.html">Visit</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section class="about-hero">
-      <h1>About Jupiter's Ice Cream</h1>
+    <!-- About Hero -->
+    <section class="hero gradient-bg">
+      <div class="container">
+        <h2 class="tagline">Our Story</h2>
+        <p>Hand‑crafted ice cream and heartfelt hospitality since day one.</p>
+      </div>
     </section>
-    <section class="about-content">
-      <h2>Our Story</h2>
-      <p>Jupiter's Ice Cream began with a dream to create the perfect scoop. Founded in New York City, we have been delighting customers with indulgent ice cream crafted by hand.</p>
-      <p>We believe in the simple pleasure of fresh ingredients, creative flavors, and community. Our mission is to bring smiles to everyone's face with every scoop.</p>
+    <!-- About Content -->
+    <section class="services">
+      <div class="container" style="max-width:800px; text-align:left;">
+        <h2 class="section-title" style="text-align:center;">Who We Are</h2>
+        <p style="margin-bottom:1.5rem; font-size:1rem; color:#555;">Jupiter's Ice Cream started as a small family venture with a big dream: to create the perfect scoop that brings joy to our community. We believe in using only the freshest ingredients, locally sourced milk and fruit, and hand‑crafted mix‑ins. Every batch is made in small quantities to ensure the creamiest texture and richest flavour.</p>
+        <p style="margin-bottom:1.5rem; font-size:1rem; color:#555;">Beyond serving delicious treats, our mission is to foster connections. We take pride in being a gathering place for friends and families. Whether you're celebrating a birthday, enjoying an afternoon snack, or grabbing boba on the go, you'll always be greeted with a warm smile.</p>
+        <p style="font-size:1rem; color:#555;">Thank you for supporting our journey and allowing us to sweeten your day. We can't wait for you to taste what's next!</p>
+      </div>
+    </section>
+    <!-- Call to Action -->
+    <section class="cta gradient-bg-secondary">
+      <div class="container">
+        <h2>Ready for a scoop?</h2>
+        <p>Come visit us or explore the menu to find your new favourite.</p>
+        <div class="cta-buttons">
+          <a href="menu.html" class="btn btn-primary"><i class="fa-solid fa-ice-cream"></i>See Menu</a>
+          <a href="visit.html" class="btn btn-outline"><i class="fa-solid fa-location-dot"></i>Visit Us</a>
+        </div>
+      </div>
     </section>
   </main>
   <footer>
-    <p>&copy; <span id="year"></span> Jupiter's Ice Cream. All rights reserved.</p>
+    <div class="footer-container">
+      <div class="footer-about">
+        <h4>Jupiter's Ice Cream</h4>
+        <p>Cool treats. Warm smiles. Serving Manor, Texas with fresh ice cream, boba, and delicious snacks.</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><i class="fa-solid fa-location-dot"></i> 13225 George Bush St Building 2, Ste 400<br>Manor, TX 78653</p>
+        <p><i class="fa-solid fa-phone"></i> (512) 294-2525</p>
+        <p><i class="fa-regular fa-calendar"></i> Mon–Sun 12:00 PM – 9:00 PM</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="visit.html">Visit</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Jupiter's Ice Cream. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>

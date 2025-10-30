@@ -4,15 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>404 – Page Not Found</title>
-  <!-- Use root‑level CSS and JS so the page is styled properly on GitHub Pages -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p/wZPcn9l9Bv5F1P0uL1GcHjqCOUMIqFZ3VAb9Y/jGj33jjXNMTvEihQ/HVbUaz2QmiFjCwXTlzAIXazhbug/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles.css">
   <script src="main.js" defer></script>
 </head>
 <body>
   <header>
+    <div class="top-bar">
+      <div class="site-info">
+        <span class="logo-emoji">🍦</span>
+        <div>
+          <h1>Jupiter's Ice Cream</h1>
+          <p>Manor, Texas</p>
+        </div>
+      </div>
+      <div class="top-buttons">
+        <a href="menu.html" class="btn btn-small btn-primary">See Menu</a>
+        <a href="tel:+15122942525" class="btn btn-small btn-outline"><i class="fa-solid fa-phone"></i>Call Now</a>
+      </div>
+    </div>
     <nav class="navbar">
-      <div class="logo"><a href="index.html">🍦 Jupiter's Ice Cream</a></div>
-      <ul class="nav-links">
+      <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="menu.html">Menu</a></li>
         <li><a href="about.html">About</a></li>
@@ -20,13 +35,43 @@
       </ul>
     </nav>
   </header>
-  <main class="not-found" style="text-align: center; padding: 4rem 1rem;">
-    <h1>Oops! Page not found.</h1>
-    <p>We can't seem to find the page you're looking for.</p>
-    <a href="index.html" class="btn-primary">Return Home</a>
+  <main>
+    <section class="hero gradient-bg">
+      <div class="container">
+        <h2 class="tagline">404</h2>
+        <p>Oops! The page you're looking for doesn't exist.</p>
+        <div class="cta-buttons">
+          <a href="index.html" class="btn btn-primary"><i class="fa-solid fa-house"></i>Return Home</a>
+          <a href="menu.html" class="btn btn-outline"><i class="fa-solid fa-ice-cream"></i>Explore Menu</a>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
-    <p>&copy; <span id="year"></span> Jupiter's Ice Cream. All rights reserved.</p>
+    <div class="footer-container">
+      <div class="footer-about">
+        <h4>Jupiter's Ice Cream</h4>
+        <p>Cool treats. Warm smiles. Serving Manor, Texas with fresh ice cream, boba, and delicious snacks.</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><i class="fa-solid fa-location-dot"></i> 13225 George Bush St Building 2, Ste 400<br>Manor, TX 78653</p>
+        <p><i class="fa-solid fa-phone"></i> (512) 294-2525</p>
+        <p><i class="fa-regular fa-calendar"></i> Mon–Sun 12:00 PM – 9:00 PM</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="visit.html">Visit</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Jupiter's Ice Cream. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>

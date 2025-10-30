@@ -3,57 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu - Jupiter's Ice Cream</title>
-  <!-- Updated to reference root-level CSS and JS -->
+  <title>Menu – Jupiter's Ice Cream</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p/wZPcn9l9Bv5F1P0uL1GcHjqCOUMIqFZ3VAb9Y/jGj33jjXNMTvEihQ/HVbUaz2QmiFjCwXTlzAIXazhbug/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles.css">
   <script src="main.js" defer></script>
 </head>
 <body>
   <header>
+    <div class="top-bar">
+      <div class="site-info">
+        <span class="logo-emoji">🍦</span>
+        <div>
+          <h1>Jupiter's Ice Cream</h1>
+          <p>Manor, Texas</p>
+        </div>
+      </div>
+      <div class="top-buttons">
+        <a href="menu.html" class="btn btn-small btn-primary">See Menu</a>
+        <a href="tel:+15122942525" class="btn btn-small btn-outline"><i class="fa-solid fa-phone"></i>Call Now</a>
+      </div>
+    </div>
     <nav class="navbar">
-      <div class="logo"><a href="index.html">🍦 Jupiter's Ice Cream</a></div>
-      <ul class="nav-links">
+      <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
+        <li class="active"><a href="menu.html">Menu</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="visit.html">Visit</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section class="menu-hero">
-      <h1>Our Menu</h1>
-      <p>From classic flavors to creative combinations, there's something for everyone.</p>
+    <!-- Menu Hero -->
+    <section class="hero gradient-bg">
+      <div class="container">
+        <h2 class="tagline">Our Menu</h2>
+        <p>From classic flavours to creative combinations, there's something for everyone.</p>
+      </div>
     </section>
-    <section class="menu-category">
-      <h2>Scoops &amp; Cones</h2>
-      <ul>
-        <li>Classic Vanilla</li>
-        <li>Rich Chocolate</li>
-        <li>Strawberry Swirl</li>
-        <li>Cookie Dough Crunch</li>
-      </ul>
+    <!-- Menu Categories -->
+    <section class="services">
+      <p class="section-subtitle">What will you have?</p>
+      <h2 class="section-title">Flavours and Favourites</h2>
+      <div class="card-container">
+        <!-- Scoops & Cones -->
+        <div class="service-card">
+          <div class="icon-circle pink"><i class="fa-solid fa-ice-cream"></i></div>
+          <h4>Scoops &amp; Cones</h4>
+          <p>
+            <strong>Classic Vanilla</strong><br>
+            <strong>Rich Chocolate</strong><br>
+            <strong>Strawberry Swirl</strong><br>
+            <strong>Cookie Dough Crunch</strong>
+          </p>
+        </div>
+        <!-- Specialty Sundaes -->
+        <div class="service-card">
+          <div class="icon-circle blue"><i class="fa-solid fa-bowl-food"></i></div>
+          <h4>Specialty Sundaes</h4>
+          <p>
+            <strong>Banana Split</strong><br>
+            <strong>Hot Fudge Brownie</strong><br>
+            <strong>Peanut Butter Delight</strong>
+          </p>
+        </div>
+        <!-- Boba & Drinks -->
+        <div class="service-card">
+          <div class="icon-circle green"><i class="fa-solid fa-mug-hot"></i></div>
+          <h4>Boba &amp; Drinks</h4>
+          <p>
+            <strong>Brown Sugar Boba</strong><br>
+            <strong>Mango Tango Smoothie</strong><br>
+            <strong>Mixed Berry Smoothie</strong><br>
+            <strong>Iced Latte</strong>
+          </p>
+        </div>
+        <!-- Snacks & Treats -->
+        <div class="service-card">
+          <div class="icon-circle pink"><i class="fa-solid fa-cookie"></i></div>
+          <h4>Snacks &amp; Treats</h4>
+          <p>
+            <strong>Mangonadas</strong><br>
+            <strong>Fruit Cups</strong><br>
+            <strong>Mini Pancakes</strong><br>
+            <strong>Corn in a Cup</strong>
+          </p>
+        </div>
+      </div>
     </section>
-    <section class="menu-category">
-      <h2>Specialty Sundaes</h2>
-      <ul>
-        <li>Banana Split</li>
-        <li>Hot Fudge Brownie</li>
-        <li>Peanut Butter Delight</li>
-      </ul>
-    </section>
-    <section class="menu-category">
-      <h2>Smoothies &amp; Beverages</h2>
-      <ul>
-        <li>Mixed Berry Smoothie</li>
-        <li>Mango Tango Smoothie</li>
-        <li>Iced Latte</li>
-        <li>Refreshing Lemonade</li>
-      </ul>
+    <!-- Call to Action -->
+    <section class="cta gradient-bg-secondary">
+      <div class="container">
+        <h2>Can't decide? Try a flight!</h2>
+        <p>Sample any three flavours or drinks and find your new favourite.</p>
+        <div class="cta-buttons">
+          <a href="about.html" class="btn btn-light"><i class="fa-solid fa-heart"></i>Learn Our Story</a>
+          <a href="visit.html" class="btn btn-outline"><i class="fa-solid fa-map-location-dot"></i>Visit Us</a>
+        </div>
+      </div>
     </section>
   </main>
   <footer>
-    <p>&copy; <span id="year"></span> Jupiter's Ice Cream. All rights reserved.</p>
+    <div class="footer-container">
+      <div class="footer-about">
+        <h4>Jupiter's Ice Cream</h4>
+        <p>Cool treats. Warm smiles. Serving Manor, Texas with fresh ice cream, boba, and delicious snacks.</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><i class="fa-solid fa-location-dot"></i> 13225 George Bush St Building 2, Ste 400<br>Manor, TX 78653</p>
+        <p><i class="fa-solid fa-phone"></i> (512) 294-2525</p>
+        <p><i class="fa-regular fa-calendar"></i> Mon–Sun 12:00 PM – 9:00 PM</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="visit.html">Visit</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Jupiter's Ice Cream. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
