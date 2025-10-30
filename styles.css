@@ -484,7 +484,8 @@ footer {
   align-items: center;
   justify-content: center;
   margin: 0 auto 0.5rem;
-  font-size: 2.5rem;
+  /* Increase size of emoji icons inside category circles */
+  font-size: 2rem;
   color: var(--text-light);
 }
 
@@ -521,14 +522,25 @@ footer {
 }
 
 .menu-item .item-icon {
-  font-size: 2rem;
-  margin-bottom: 0.8rem;
+  /* Display emoji icons larger and centered above the item title */
+  display: block;
+  /* Display icons inside colored circles to make them pop */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--text-light);
 }
 
-.menu-item .item-icon.pink { color: var(--primary-pink); }
-.menu-item .item-icon.blue { color: var(--primary-blue); }
-.menu-item .item-icon.green { color: var(--primary-green); }
-.menu-item .item-icon.yellow { color: #f8d86e; }
+/* Colour-coded backgrounds for menu item icons */
+.menu-item .item-icon.pink { background: var(--primary-pink); }
+.menu-item .item-icon.blue { background: var(--primary-blue); }
+.menu-item .item-icon.green { background: var(--primary-green); }
+.menu-item .item-icon.yellow { background: #f8d86e; color: var(--text-dark); }
 
 .menu-item h3 {
   font-family: var(--font-head);
