@@ -465,3 +465,144 @@ footer {
 .footer-social a:hover {
   color: var(--primary-pink);
 }
+
+/* Menu page styles */
+.menu-category {
+  padding: 4rem 1rem;
+}
+
+.menu-category .category-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.menu-category .category-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.5rem;
+  font-size: 2.5rem;
+  color: var(--text-light);
+}
+
+.menu-category .category-icon.pink { background: var(--primary-pink); }
+.menu-category .category-icon.blue { background: var(--primary-blue); }
+.menu-category .category-icon.green { background: var(--primary-green); }
+.menu-category .category-icon.yellow { background: #f8d86e; }
+
+.menu-category h2 {
+  font-family: var(--font-head);
+  font-size: 2.5rem;
+  color: var(--text-dark);
+}
+
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.menu-item {
+  background: var(--text-light);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  width: 280px;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.menu-item .item-icon {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.menu-item .item-icon.pink { color: var(--primary-pink); }
+.menu-item .item-icon.blue { color: var(--primary-blue); }
+.menu-item .item-icon.green { color: var(--primary-green); }
+.menu-item .item-icon.yellow { color: #f8d86e; }
+
+.menu-item h3 {
+  font-family: var(--font-head);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+.menu-item p {
+  font-size: 0.9rem;
+  color: #555555;
+  margin: 0;
+}
+
+.menu-item .badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid;
+  white-space: nowrap;
+}
+
+.menu-item .badge.popular {
+  background: var(--primary-pink);
+  border-color: var(--primary-pink);
+  color: var(--text-light);
+}
+
+.menu-item .badge.adult {
+  background: var(--primary-blue);
+  border-color: var(--primary-blue);
+  color: var(--text-light);
+}
+
+/* Dietary & allergy information section */
+.menu-info {
+  padding: 3rem 1rem;
+  background: linear-gradient(180deg, var(--grad-hero-end), var(--grad-hero-start));
+  border-radius: 15px;
+  margin: 4rem auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.menu-info .info-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.menu-info .info-block .info-icon {
+  font-size: 1.5rem;
+  color: var(--primary-pink);
+}
+
+.menu-info .info-block h4 {
+  font-family: var(--font-head);
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.menu-info .info-block p {
+  font-size: 0.9rem;
+  color: #555555;
+  margin: 0;
+}
+
+.menu-info .disclaimer {
+  margin-top: 1rem;
+  font-style: italic;
+  font-size: 0.9rem;
+}
